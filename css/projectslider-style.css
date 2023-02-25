@@ -91,8 +91,16 @@ footer {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(0%, -50%); 
+  transform: translate(-30%, -50%); /* For 5 Projects*/
+  /*transform: translate(-17%, -50%);*/ /*For 9 projects*/
+  
 }
+
+/*
+#image-track a{
+  transform: translate(-49vw, 0);
+}
+*/
 
 #image-track > .image,
 #image-track a img {
