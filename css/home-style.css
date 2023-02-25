@@ -1,0 +1,209 @@
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /*prevent the page from scrolling horizontally*/
+
+  background-color: rgb(20, 20, 20);
+  /*background-image: url('background-image2.jpg');*/
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+  
+
+header {
+  /*background-color: #1f1f1fe8;*/
+  background-color: #00000048;
+  padding: 20px;
+  padding-left: 30px;
+
+  width: 100%;
+  display: flex;
+  vertical-align: top;   
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  align-self: flex-start;
+  vertical-align: top;
+  padding-left: 10px;
+  
+  font-size: 3em;
+}
+
+
+nav {
+  float: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline-block; /* make the nav bar elements appear in a line */
+}
+
+nav li {
+  display: inline-block; /* make the nav bar elements appear in a line */
+}
+
+.nav-button {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #4CAF50; /* button background color */
+  border: none; /* remove border */
+  cursor: pointer; /* change cursor to pointer when hovering over the button */
+}
+.nav-button:hover {
+  background-color: #3e8e41; /* change background color on hover */
+}
+
+
+nav ul li ul.project-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  flex-direction: column; /* change the direction of the dropdown-content to column */
+}
+
+nav ul li:hover ul.project-dropdown-content {
+  display: flex;
+}
+
+nav ul li ul.project-dropdown-content li {
+  float: none;
+}
+
+nav ul li ul.project-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border: 1px solid #ccc; /* Add a border to the project buttons */
+}
+
+nav ul li ul.project-dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+
+main {
+  padding: 10px;
+}
+
+
+
+.left-section {
+  float: left;
+  width: 48%;
+  text-align: center;
+
+  margin-top: 75px;
+  margin-left: 20px;
+  vertical-align: center;
+  /*background-color: red;*/
+}
+
+.circular-image {
+  border-radius: 50%;
+  width: 60vh;
+  height: 60vh;
+  object-fit: cover;
+  left: 50%;
+}
+
+
+.right-section {
+  float: right;
+  width: 48%;
+  margin-top: 75px;
+  margin-right: 20px;
+
+  text-align: center;
+  /*background-color: #000000b4;*/
+  /*background-color: green;*/
+}
+.right-section a:visited {
+  color: rgb(0, 162, 255);
+}
+
+
+#about{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+#about p{
+  text-align: left;
+}
+
+
+#contact{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#contact a:link {
+  color: rgb(0, 162, 255);
+}
+#contact a:visited {
+  color: rgb(0, 162, 255);
+}
+#contact a:hover {
+  color: rgb(0, 255, 13);
+}
+#contact a:active {
+  color: red;
+}
+
+
+#contact ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#contact ul li {
+  margin-bottom: 4px;
+}
+
+
+
+section h2 {
+  margin-top: 0;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  /*background-color: #00000048;*/
+  background-color: #0e0e0e;
+
+  color: white;
+  text-align: center;
+}
+

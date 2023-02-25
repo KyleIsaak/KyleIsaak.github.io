@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Kyle Isaak's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="../css/project-style.css">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Unreal Engine 5 Prototype</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html" class="nav-button">About</a></li>
+          <li><a href="Resume.html" class="nav-button">Resume</a></li>
+          <li>
+            <a href="projects.html" class="nav-button">Projects</a>
+            <ul class="project-dropdown-content">
+              <li><a href="TextClassification.html">Machine Learning Text Classification</a></li>
+              <li><a href="MRIClassification.html">Machine Learning MRI Classification</a></li>
+              <li><a href="RemoteLearning.html">Remote Learning UI Prototype</a></li>
+              <li><a href="UnrealEngine.html">Unreal Engine 5 Prototype</a></li>
+              <li><a href="CyberSecurity.html">Power Grid Cybersecurity</a></li>
+              <li><a href="To-DoList.html">To-DoList w/ Database</a></li>
+              <li><a href="TempleEscape.html">Temple Escape Game</a></li>
+              <li><a href="SudokuSolver.html">Sudoku Solver</a></li>
+              <li><a href="Walk-inClinic.html">Walk-In Clinic</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main>
+      <div class="left-section">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/JgF1-B4YaxA" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <section id="Description">
+          <h2>Description</h2>
+            <p>The key parts of this prototype are:</p>
+            <ul>
+              <li>UI free menu systems</li>
+              <li>Functioning multiplayer</li>
+              <li>Integration with Unreal's <a href="https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/Online/Steam/">Steam Online Subsystem</a></li>
+              <li>Efficient voxel-based terrain generation using <a href="https://devforum.roblox.com/t/consume-everything-how-greedy-meshing-works/452717"> greedy meshing</a></li>
+            </ul>
+
+            <p>
+              This prototype has fully-replicating multiplayer that works both with and without Steam. The version that is currently on Google Drive requires Steam to function,
+              but this can be changed using just 2 lines of code, and will eventually be an option that users can select
+            </p>
+
+            <p>
+              For this project, I challenged myself to create menu systems that the players can interact with without a traditional menu interface. Instead of having a main menu
+              that users need to click through, the game instead starts the player off in a room with pressure plates and other interactable objects. This increases the immersion
+              that a player will experience right from the start of when the game is launched. An example of this is a keyboard in the game that players must jump on to name their
+              server, as well as play / join games pressure plates that they must stand on to activate.
+            </p>
+
+            <p>
+              The largest accomplishment in this prototype is the procedural terrain generation. Once a single player game or server is started, hundreds of floating islands are 
+              generated using a pre-determined seed (which players will eventually be able to choose). My algorithm can efficiently generate and render about 50 million voxels
+              in about 1 minute (hardware dependent). 
+            </p>
+        </section>
+  
+  
+        <section id="Project-Files">
+          <h2>Project Files</h2>
+          <p>If you would like to run the game on your machine, you can download the current playable build using this
+            <a href="https://drive.google.com/file/d/1GM3PAHd03A_FPanDmuibYta6nq21FRXf/view?usp=share_link">Google Drive</a> link. You may need to update your graphics
+            drivers and install UE5 prerequisites to run this game. You will be notified if either of these actions are required when you first attempt to launch the game.
+          </p>
+        </section>
+      </div>
+      
+
+    </main>
+
+
+    <footer>
+      <p>Copyright © 2023 Kyle Isaak</p>
+    </footer>
+
+  </body>
+
+</html>

@@ -1,0 +1,156 @@
+* {
+  user-select: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(20, 20, 20);
+  margin: 0rem;
+  overflow: hidden;
+}
+  
+
+/* ------------------------- Header + Footer -------------------------*/
+header {
+  color: white;
+  background-color: #0e0e0e;
+  padding: 20px;
+  padding-left: 30px;
+
+  width: 100%;
+  display: flex;
+  vertical-align: top;   
+  justify-content: space-between;
+}
+
+header h1 {
+  max-width: 40%;
+  margin: 0;
+  align-self: flex-start;
+  vertical-align: top;
+  padding-left: 10px;
+  
+  font-size: 3em;
+}
+
+
+nav {
+  float: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+nav li {
+  display: inline-block;
+}
+
+.nav-button {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #4CAF50;
+  border: none;
+  cursor: pointer;
+}
+.nav-button:hover {
+  background-color: #3e8e41;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  background-color: #0e0e0e;
+
+  color: white;
+  text-align: center;
+  font-size: 14px;
+
+  z-index: 1;
+}
+
+
+/* ------------------------- Sliding track -------------------------*/  
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%); 
+}
+
+#image-track > .image,
+#image-track a img {
+  width: 60vmin;
+  height: 60vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
+
+#image-track a img {
+  display: block;
+}
+
+/* ------------------------- GitHub Link ------------------------- */
+
+body.menu-toggled > .meta-link > span {
+  color: rgb(30, 30, 30);
+}
+
+#github-link {
+  bottom: 60px;
+}
+
+#github-link > i {
+  color: rgb(94, 106, 210);
+}
+
+
+.meta-link {
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  bottom: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;  
+  display: inline-flex;
+  gap: 5px;
+  left: 10px;
+  padding: 10px 20px;
+  position: fixed;
+  text-decoration: none;
+  transition: background-color 400ms, border-color 400ms;
+  z-index: 10000;
+}
+
+.meta-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.meta-link > i, .meta-link > span {
+  height: 20px;
+  line-height: 20px;
+}
+
+.meta-link > span {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
