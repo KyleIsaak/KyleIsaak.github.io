@@ -42,6 +42,18 @@ main {
   padding: 10px;
 }
 
+a:link {
+  color: rgb(0, 162, 255);
+}
+a:visited {
+  color: rgb(0, 162, 255);
+}
+a:hover {
+  color: rgb(0, 255, 13);
+}
+a:active {
+  color: red;
+}
 
 
 .left-section {
@@ -54,7 +66,6 @@ main {
   vertical-align: center;
   /*background-color: red;*/
 }
-
 .circular-image {
   border-radius: 50%;
   width: 60vh;
@@ -74,14 +85,10 @@ main {
   /*background-color: #000000b4;*/
   /*background-color: green;*/
 }
+
 .right-section h2{
   text-align: left;
 }
-.right-section a:visited {
-  color: rgb(0, 162, 255);
-}
-
-
 
 #about{
   padding-left: 20px;
@@ -95,39 +102,21 @@ main {
   text-decoration: none;
 }
 
-
 #contact{
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-#contact a:link {
-  color: rgb(0, 162, 255);
-}
-#contact a:visited {
-  color: rgb(0, 162, 255);
-}
-#contact a:hover {
-  color: rgb(0, 255, 13);
-}
-#contact a:active {
-  color: red;
-}
-
-
 #contact ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-
 #contact ul li {
   margin-bottom: 4px;
 }
-
 section h2 {
   margin-top: 0;
 }
