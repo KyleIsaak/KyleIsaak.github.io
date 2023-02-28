@@ -47,7 +47,12 @@ main {
   margin-top: 75px;
   margin-left: 20px;
 
-  text-align: center;    
+  text-align: center;  
+}
+.left-section p{
+  left: 50%;
+  transform: translate(0, +50%);
+  font-size: 30px;
 }
 
 .video-container{

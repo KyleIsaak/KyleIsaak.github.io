@@ -43,7 +43,7 @@ header h1 {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-30%, -50%); /* For 5 Projects*/
+  transform: translate(-25%, -50%); /* For 6 Projects*/
   /*transform: translate(-17%, -50%);*/ /*For 9 projects*/
   
 }
@@ -66,18 +66,21 @@ header h1 {
   display: block;
 }
 
-/* ------------------------- GitHub Link ------------------------- */
+/* ------------------------- GitHub / Youtube Links ------------------------- */
 
 body.menu-toggled > .meta-link > span {
   color: rgb(30, 30, 30);
 }
 
 #github-link {
-  bottom: 60px;
+  bottom: 108px;
 }
-
 #github-link > i {
   color: rgb(94, 106, 210);
+}
+
+#youtube-link{
+  bottom: 60px;
 }
 
 

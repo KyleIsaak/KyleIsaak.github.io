@@ -25,9 +25,12 @@ const handleOnMove = e => {
   
   const percentage = (mouseDelta / maxDelta) * -100,
         nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -40); /*Values for 5 projects*/
+        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -50); /*Values for 6 projects*/
         /*nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -66); /*Values for 9 projects*/
         /*nextPercentage = Math.max(nextPercentage, 70);*/ /*Original*/
+        if (nextPercentage < -50){
+          nextPercentage = -50;
+        }
   
   track.dataset.percentage = nextPercentage;
 
@@ -40,7 +43,7 @@ const handleOnMove = e => {
   
   track.animate(
     /*{transform: `translate( ${(nextPercentage -17)}% , -50%)`}, /*Values for 9 projects*/
-    {transform: `translate( ${(nextPercentage -30)}% , -50%)`}, /* Values for 5 projects*/
+    {transform: `translate( ${(nextPercentage -25)}% , -50%)`}, /* Values for 6 projects*/
     { duration: 1200, fill: "forwards" }
   );
   

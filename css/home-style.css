@@ -42,16 +42,16 @@ main {
   padding: 10px;
 }
 
-a:link {
+main a:link {
   color: rgb(0, 162, 255);
 }
-a:visited {
+main a:visited {
   color: rgb(0, 162, 255);
 }
-a:hover {
+main a:hover {
   color: rgb(0, 255, 13);
 }
-a:active {
+main a:active {
   color: red;
 }
 
