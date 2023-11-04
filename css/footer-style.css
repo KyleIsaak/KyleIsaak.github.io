@@ -1,4 +1,5 @@
 footer {
+    display: none;  /* use this line to completely disable footers*/
     position: absolute;
     bottom: 0;
     width: 100%;
